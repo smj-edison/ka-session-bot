@@ -20,3 +20,5 @@ async function loadPng(url) {
         });
     });
 }
+
+module.exports = loadPng;
