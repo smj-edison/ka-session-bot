@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/smj-edison/ka-session-bot#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "ka-api": "github:smj-edison/ka-api",
     "pngjs": "^6.0.0"
   }
