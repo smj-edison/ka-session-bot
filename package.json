@@ -1,0 +1,19 @@
+{
+  "name": "ka-session-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smj-edison/ka-session-bot.git"
+  },
+  "author": "Mason Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smj-edison/ka-session-bot/issues"
+  },
+  "homepage": "https://github.com/smj-edison/ka-session-bot#readme"
+}
