@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/smj-edison/ka-session-bot/issues"
   },
-  "homepage": "https://github.com/smj-edison/ka-session-bot#readme"
+  "homepage": "https://github.com/smj-edison/ka-session-bot#readme",
+  "dependencies": {
+    "ka-api": "github:smj-edison/ka-api"
+  }
 }
