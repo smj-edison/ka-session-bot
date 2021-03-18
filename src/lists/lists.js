@@ -9,7 +9,7 @@ List.prototype.add = function(item) {
 }
 
 List.prototype.remove = function(index) {
-    this.list.splice(index, 1);
+    return this.list.splice(index, 1)[0];
 }
 
 
@@ -30,8 +30,10 @@ TimeoutList.prototype.add = function(item) {
 };
 
 TimeoutList.prototype.remove = function(index) {
-    List.prototype.remove.call(this, index);
+    const removed = List.prototype.remove.call(this, index);
     this.timeouts.splice(index, 1);
+
+    return removed;
 }
 
 TimeoutList.prototype.purgeExpired = function() {
