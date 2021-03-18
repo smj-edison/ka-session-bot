@@ -38,7 +38,16 @@ TimeoutList.prototype.remove = function(index) {
 
 TimeoutList.prototype.purgeExpired = function() {
     const now = (new Date()).getMilliseconds();
-    [this.timeouts, this.list] = multiFilter([this.timeouts, this.list], expireTime => now >= expireTime);
+    let expired = [];
+
+    [this.timeouts, this.list] = multiFilter([this.timeouts, this.list], (expireTime, item) => {
+        if(now >= expireTime) {
+            expired.push(item);
+            return true;
+        }
+    });
+
+    return expired;
 };
 
 
