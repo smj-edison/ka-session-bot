@@ -50,6 +50,10 @@ TimeoutList.prototype.purgeExpired = function() {
     return expired;
 };
 
+TimeoutList.prototype.refresh(index) {
+    this.timeouts[index] = (new Date()).getMilliseconds() + this.timeoutTime;
+}
+
 
 module.exports = {
     List,
