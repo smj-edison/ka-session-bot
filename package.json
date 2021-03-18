@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "ka-api": "github:smj-edison/ka-api",
-    "pngjs": "^6.0.0"
+    "pngjs": "^6.0.0",
+    "ramda": "^0.27.1"
   }
 }
